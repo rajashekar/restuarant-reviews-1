@@ -322,16 +322,46 @@ nav h1 a {
   }
 }
 
+@media (max-height: 850px) {
+  #filter-container {
+    top: 43%;  
+    width: 100%;
+    bottom: 45px;
+  }
+  #map-container {
+    top: 67px;
+  }
+  nav {
+    height: 66px;
+  }
+  nav h1 {
+    margin: auto;
+    padding-top: 3px;
+  }
+  .filter-options select {
+    font-size: 8pt;
+    height: 28px;
+    width: 132px;
+  }
+  #footer {
+    padding: 7px;
+  }
+}
+
 @media (max-height: 750px) {
   #filter-container {
-    top: 47%;  
-    width: 100%;
+    top: 44%;  
+  }
+}
+
+@media (max-height: 680px) {
+  #filter-container {
+    top: 45%;  
   }
 }
 
 @media (max-height: 600px) {
   #filter-container {
-    top: 49%;  
-    width: 100%;
+    top: 46%;  
   }
 }
