@@ -38,19 +38,19 @@
       aria-labelledby="map-description" role="application">
       <div id="map"></div>
     </section>
-    <label id="map-description" class="map-description">Map showing Restaurant location</label>
+    <label id="map-description">Map showing Restaurant location</label>
     <!-- End map -->
     <!-- Beginning restaurant -->
-    <section tabindex="4" id="restaurant-container">
-      <h1 id="restaurant-name"></h1>
-      <img id="restaurant-img">
-      <p id="restaurant-cuisine"></p>
-      <p id="restaurant-address"></p>
-      <table id="restaurant-hours"></table>
+    <section tabindex="4" aria-label="restaurant details" id="restaurant-container">
+      <h1 tabindex="5" id="restaurant-name"></h1>
+      <img tabindex="6" alt="restaurant image" id="restaurant-img">
+      <p tabindex="7" id="restaurant-cuisine"></p>
+      <p tabindex="8" id="restaurant-address"></p>
+      <table tabindex="9" id="restaurant-hours"></table>
     </section>
     <!-- end restaurant -->
     <!-- Beginning reviews -->
-    <section id="reviews-container">
+    <section tabindex="10" id="reviews-container">
       <ul id="reviews-list"></ul>
     </section>
     <!-- End reviews -->
