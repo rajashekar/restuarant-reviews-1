@@ -32,4 +32,4 @@ Open `http://localhost:8010` in browser
 
 ## Contributing
 
-This repository is done as part of Udacity Front end Web developer Feed reader project. Therefore, we most likely will not accept pull requests.
+This repository is done as part of Udacity Front end Web developer Restaurant Reviews project. Therefore, we most likely will not accept pull requests.
