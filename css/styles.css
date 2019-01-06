@@ -41,10 +41,10 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 }
 #map-container{
   background: blue none repeat scroll 0 0;
-  height: 86%;
+  height: 88%;
   position: fixed;
   right: 0;
-  top: 80px;
+  top: calc(8% - 8px);
   width: 74%;
 }
 #filter-container{
@@ -53,7 +53,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   position: fixed;
   overflow-y: scroll;
   top: 80px;
-  bottom: 70px;
+  bottom: 0;
 }
 .main-header {
   width: 100%;
@@ -65,7 +65,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   color: #aaa;
   font-size: 8pt;
   letter-spacing: 1px;
-  padding: 25px;
+  padding: 1%;
   text-align: center;
   text-transform: uppercase;
   position: fixed;
@@ -220,10 +220,10 @@ nav h1 a {
 }
 .inside #map-container {
   background: blue none repeat scroll 0 0;
-  height: 87%;
+  height: 88%;
   position: fixed;
   right: 0;
-  top: 80px;
+  top: 73px;
   width: 50%;
 }
 .inside #map {
@@ -231,11 +231,7 @@ nav h1 a {
   height: 100%;
   width: 100%;
 }
-.inside #footer {
-  bottom: 0;
-  position: absolute;
-  width: 50%;
-}
+
 #restaurant-name {
   color: #f18200;
   font-family: Arial,sans-serif;
@@ -265,14 +261,18 @@ nav h1 a {
   text-transform: uppercase;
 	width: 90%;
 }
-#restaurant-container, #reviews-container {
+#restaurant-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
   padding: 140px 40px 30px;
   width: 50%;
 }
 #reviews-container {
-  padding: 30px 40px 80px;
+  padding: 2%;
+  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid #fff;
+  padding: 16px 40px 30px;
+  width: 50%;
 }
 #reviews-container h2 {
   color: #f58500;
@@ -292,7 +292,7 @@ nav h1 a {
   list-style-type: none;
   margin: 0 0 30px;
   overflow: hidden;
-  padding: 0 20px 20px;
+  padding: 3%;
   position: relative;
   width: 85%;
 }
@@ -303,6 +303,8 @@ nav h1 a {
   color: #666;
 }
 
+/* ============ Media Queries for home page =============== */
+
 @media (max-width: 1000px) {
   #filter-container {
     top: 43%;  
@@ -310,7 +312,7 @@ nav h1 a {
   }
   #map-container {
     left: 0;
-    height: 35%;
+    height: 36%;
     width: 100%;
   }
 }
@@ -343,9 +345,6 @@ nav h1 a {
     height: 28px;
     width: 132px;
   }
-  #footer {
-    padding: 7px;
-  }
 }
 
 @media (max-height: 750px) {
@@ -363,5 +362,118 @@ nav h1 a {
 @media (max-height: 600px) {
   #filter-container {
     top: 46%;  
+  }
+}
+
+/* ============ Media Queries for restaurant details page =============== */
+
+@media (max-width: 1300px) {
+  #breadcrumb {
+    width: calc(100% - 80px);
+  }
+  .inside #map-container {
+    height: 35%;
+    top: 12%;
+    width: 100%;
+  }
+  #restaurant-container {
+    padding: 0 5% 1%;
+    width: 38%;
+    position: fixed;
+    overflow-y: scroll;
+    top: 49%;
+    height: 40%;
+  }
+  #reviews-container {
+    padding: 0px;
+    right: 0;
+    position: fixed;
+    top: 49%;
+    overflow-y: scroll;
+    height: 46%;
+  }
+}
+
+@media (max-width: 800px) {
+  #restaurant-container {
+    position: static;
+    width: 100%;
+    overflow: auto;
+    margin-top: 516px;
+  }
+  #reviews-container {
+    position: static;
+    width: 100%;
+    margin-left: 4%;
+  }
+  #reviews-list li {
+    position: static;
+  }
+}
+
+@media (max-height: 1400px) {
+  .inside #map-container {
+    top: 9%;
+  }
+  #restaurant-container {
+    top: 45%;
+    height: 53%;
+  }
+  #reviews-container {
+    top: 45%;
+    height: 53%;
+  }
+}
+
+@media (max-height: 1030px) {
+  .inside #map-container {
+    top: 11%;
+  }
+}
+@media (max-height: 850px) {
+  .inside header, .inside > #footer, .inside #map-container {
+    width: 91%;
+  }
+  .inside #map-container {
+    top: 13%;
+  }
+  #restaurant-container {
+    margin-top: 428px;
+  }
+}
+
+@media (max-height: 750px) {
+  .inside #map-container {
+    top: 14%;
+  }
+  #restaurant-container {
+    margin-top: 395px;
+  }
+}
+
+@media (max-height: 700px) {
+  .inside #map-container {
+    top: 15%;
+  }
+  #restaurant-container {
+    margin-top: 365px;
+  }
+}
+
+@media (max-height: 650px) {
+  .inside #map-container {
+    top: 16%;
+  }
+  #restaurant-container {
+    margin-top: 358px;
+  }
+}
+
+@media (max-height: 600px) {
+  .inside #map-container {
+    top: 18%;
+  }
+  #restaurant-container {
+    margin-top: 328px;
   }
 }
