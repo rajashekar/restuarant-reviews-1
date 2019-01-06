@@ -15,14 +15,18 @@
 
     <header class="main-header">
       <nav>
-        <h1><a href="/">Restaurant Reviews</a></h1>
+        <h1>
+          <a href="/" tabindex="1" aria-label="current page">
+            Restaurant Reviews
+          </a>
+        </h1>
       </nav>
     </header>
 
     <section id="filter-container">
       <div class="filter-options">
         <h2>Filter Results</h2>
-        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+        <select tabindex="3" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
         </select>
         <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
@@ -32,9 +36,10 @@
       <ul id="restaurants-list"></ul>
     </section>
 
-    <section id="map-container">
+    <section tabindex="2" id="map-container" aria-labelledby="map-description" role="application">
       <div id="map"></div>
     </section>
+    <label id="map-description" class="map-description">Map showing Restaurant locations</label>
 
     <footer id="footer">
       Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
