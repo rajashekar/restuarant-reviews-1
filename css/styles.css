@@ -7,6 +7,9 @@ body,td,th,p{
 	color: #333;
 	line-height: 1.5;
 }
+label {
+  visibility: hidden;
+}
 body {
 	background-color: #fdfdfd;
 	margin: 0;
