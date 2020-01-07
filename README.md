@@ -1,5 +1,5 @@
 #  Restaurant Reviews Project
-This Project is done as part of Udacity Front end Web developer course. The purpose of the project is to understand the concepts of responsive website, accessibility and offline first using service worker. 
+The purpose of the project is to understand the concepts of responsive website, accessibility and offline first using service worker. 
 
 ## Table of Contents
 
